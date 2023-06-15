@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Empty Properties</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#title { position: absolute; top: 0; left: 0; background-color: yellow; padding: 5px; }
+#description { position: absolute; top: 40px; left: 0; background-color: yellow; padding: 5px; }
+#teacher { position: absolute; top: 80px; left: 0; background-color: yellow; padding: 5px; }
+#name { position: absolute; top: 120px; left: 0; background-color: yellow; padding: 5px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="title">Map Empty Properties</div>
+<div id="description">Class: Web Mapping</div>
+<div id="teacher">Teacher: Michał Rzeszewski</div>
+<div id="name">Name: Jakob Ludwigs</div>
+<script>
+mapboxgl.accessToken = "pk.eyJ1IjoiamFrbHVkMSIsImEiOiJjbGd1bm5yZnQwOXBhM2VsbHRocjdxN282In0.0vdGcXI9-MAPMpLxcCiEjg";
+const map = new mapboxgl.Map({
+  container: "map", // container ID
+  style: "mapbox://styles/jaklud1/clivnl4yl001y01qq77i6dk26", // style URL
+  center: [-2.475789, 54.404875], // Zentrum auf England (London)
+  zoom: 5.08 // starting zoom
+});
+</script>
+</body>
+</html>
